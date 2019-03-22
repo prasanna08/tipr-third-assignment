@@ -1,0 +1,7 @@
+Conv1: filter=7x7x1x64, activation=swish
+MaxPool1: kernel=2x2, strides=3x3
+Conv2: filter=3x3x64x64, activation=swish
+MaxPool2: kernel=2x2, strides=3x3
+FCN1: output=512, activation=swish
+FCN2: output=192, activation=swish
+Final output using softmax.

@@ -1,0 +1,75 @@
+=======================================================
+conv-3-3-64-fcn-100-10
+Epoch 0, Accuracy 0.500, F1-Macro 0.491, F1-Micro 0.500
+Epoch 1, Accuracy 0.542, F1-Macro 0.536, F1-Micro 0.542
+Epoch 2, Accuracy 0.575, F1-Macro 0.570, F1-Micro 0.575
+Epoch 3, Accuracy 0.619, F1-Macro 0.617, F1-Micro 0.619
+Epoch 4, Accuracy 0.642, F1-Macro 0.641, F1-Micro 0.642
+Epoch 5, Accuracy 0.624, F1-Macro 0.615, F1-Micro 0.624
+Epoch 6, Accuracy 0.652, F1-Macro 0.648, F1-Micro 0.652
+Epoch 7, Accuracy 0.667, F1-Macro 0.663, F1-Micro 0.667
+Epoch 8, Accuracy 0.671, F1-Macro 0.670, F1-Micro 0.671
+Epoch 9, Accuracy 0.690, F1-Macro 0.687, F1-Micro 0.690
+Epoch 10, Accuracy 0.689, F1-Macro 0.684, F1-Micro 0.689
+Epoch 11, Accuracy 0.688, F1-Macro 0.683, F1-Micro 0.688
+Epoch 12, Accuracy 0.717, F1-Macro 0.716, F1-Micro 0.717
+Epoch 13, Accuracy 0.721, F1-Macro 0.722, F1-Micro 0.721
+Epoch 14, Accuracy 0.731, F1-Macro 0.727, F1-Micro 0.731
+Epoch 15, Accuracy 0.738, F1-Macro 0.733, F1-Micro 0.738
+Epoch 16, Accuracy 0.731, F1-Macro 0.732, F1-Micro 0.731
+Epoch 17, Accuracy 0.761, F1-Macro 0.762, F1-Micro 0.761
+Epoch 18, Accuracy 0.753, F1-Macro 0.754, F1-Micro 0.753
+Epoch 19, Accuracy 0.770, F1-Macro 0.769, F1-Micro 0.770
+Epoch 20, Accuracy 0.779, F1-Macro 0.779, F1-Micro 0.779
+
+
+=======================================================
+conv-5-5-32-conv-3-3-64-fcn-100-10
+Epoch 0, Accuracy 0.413, F1-Macro 0.397, F1-Micro 0.413
+Epoch 1, Accuracy 0.475, F1-Macro 0.471, F1-Micro 0.475
+Epoch 2, Accuracy 0.518, F1-Macro 0.508, F1-Micro 0.518
+Epoch 3, Accuracy 0.560, F1-Macro 0.557, F1-Micro 0.560
+Epoch 4, Accuracy 0.571, F1-Macro 0.570, F1-Micro 0.571
+Epoch 5, Accuracy 0.568, F1-Macro 0.553, F1-Micro 0.568
+Epoch 6, Accuracy 0.584, F1-Macro 0.567, F1-Micro 0.584
+Epoch 7, Accuracy 0.624, F1-Macro 0.620, F1-Micro 0.624
+Epoch 8, Accuracy 0.614, F1-Macro 0.601, F1-Micro 0.614
+Epoch 9, Accuracy 0.633, F1-Macro 0.627, F1-Micro 0.633
+Epoch 10, Accuracy 0.633, F1-Macro 0.631, F1-Micro 0.633
+Epoch 11, Accuracy 0.652, F1-Macro 0.650, F1-Micro 0.652
+Epoch 12, Accuracy 0.644, F1-Macro 0.638, F1-Micro 0.644
+Epoch 13, Accuracy 0.668, F1-Macro 0.667, F1-Micro 0.668
+Epoch 14, Accuracy 0.695, F1-Macro 0.689, F1-Micro 0.695
+Epoch 15, Accuracy 0.695, F1-Macro 0.693, F1-Micro 0.695
+Epoch 16, Accuracy 0.688, F1-Macro 0.687, F1-Micro 0.688
+Epoch 17, Accuracy 0.705, F1-Macro 0.701, F1-Micro 0.705
+Epoch 18, Accuracy 0.715, F1-Macro 0.713, F1-Micro 0.715
+Epoch 19, Accuracy 0.708, F1-Macro 0.709, F1-Micro 0.708
+Epoch 20, Accuracy 0.729, F1-Macro 0.730, F1-Micro 0.729
+
+
+=======================================================
+conv-5-5-64-fcn-384-192-10
+Epoch 0, Accuracy 0.465, F1-Macro 0.463, F1-Micro 0.465
+Epoch 1, Accuracy 0.573, F1-Macro 0.571, F1-Micro 0.573
+Epoch 2, Accuracy 0.614, F1-Macro 0.604, F1-Micro 0.614
+Epoch 3, Accuracy 0.634, F1-Macro 0.632, F1-Micro 0.634
+Epoch 4, Accuracy 0.645, F1-Macro 0.638, F1-Micro 0.645
+Epoch 5, Accuracy 0.672, F1-Macro 0.670, F1-Micro 0.672
+Epoch 6, Accuracy 0.693, F1-Macro 0.690, F1-Micro 0.693
+Epoch 7, Accuracy 0.717, F1-Macro 0.716, F1-Micro 0.717
+Epoch 8, Accuracy 0.714, F1-Macro 0.717, F1-Micro 0.714
+Epoch 9, Accuracy 0.726, F1-Macro 0.723, F1-Micro 0.726
+Epoch 10, Accuracy 0.767, F1-Macro 0.762, F1-Micro 0.767
+Epoch 11, Accuracy 0.777, F1-Macro 0.778, F1-Micro 0.777
+Epoch 12, Accuracy 0.787, F1-Macro 0.788, F1-Micro 0.787
+Epoch 13, Accuracy 0.810, F1-Macro 0.812, F1-Micro 0.810
+Epoch 14, Accuracy 0.835, F1-Macro 0.833, F1-Micro 0.835
+Epoch 15, Accuracy 0.848, F1-Macro 0.847, F1-Micro 0.848
+Epoch 16, Accuracy 0.857, F1-Macro 0.857, F1-Micro 0.857
+Epoch 17, Accuracy 0.860, F1-Macro 0.858, F1-Micro 0.860
+Epoch 18, Accuracy 0.891, F1-Macro 0.891, F1-Micro 0.891
+Epoch 19, Accuracy 0.889, F1-Macro 0.888, F1-Micro 0.889
+Epoch 20, Accuracy 0.912, F1-Macro 0.911, F1-Micro 0.912
+
+

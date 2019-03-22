@@ -1,0 +1,60 @@
+=======================================================
+swish
+Epoch 0, Accuracy 0.852, F1-Macro 0.851, F1-Micro 0.852
+Epoch 1, Accuracy 0.891, F1-Macro 0.883, F1-Micro 0.891
+Epoch 2, Accuracy 0.895, F1-Macro 0.886, F1-Micro 0.895
+Epoch 3, Accuracy 0.910, F1-Macro 0.901, F1-Micro 0.910
+Epoch 4, Accuracy 0.926, F1-Macro 0.921, F1-Micro 0.926
+Epoch 5, Accuracy 0.934, F1-Macro 0.932, F1-Micro 0.934
+Epoch 6, Accuracy 0.930, F1-Macro 0.927, F1-Micro 0.930
+Epoch 7, Accuracy 0.934, F1-Macro 0.934, F1-Micro 0.934
+Epoch 8, Accuracy 0.938, F1-Macro 0.935, F1-Micro 0.938
+Epoch 9, Accuracy 0.953, F1-Macro 0.951, F1-Micro 0.953
+Epoch 10, Accuracy 0.965, F1-Macro 0.963, F1-Micro 0.965
+
+
+=======================================================
+relu
+Epoch 0, Accuracy 0.863, F1-Macro 0.858, F1-Micro 0.863
+Epoch 1, Accuracy 0.895, F1-Macro 0.887, F1-Micro 0.895
+Epoch 2, Accuracy 0.902, F1-Macro 0.895, F1-Micro 0.902
+Epoch 3, Accuracy 0.914, F1-Macro 0.901, F1-Micro 0.914
+Epoch 4, Accuracy 0.938, F1-Macro 0.931, F1-Micro 0.938
+Epoch 5, Accuracy 0.941, F1-Macro 0.938, F1-Micro 0.941
+Epoch 6, Accuracy 0.949, F1-Macro 0.947, F1-Micro 0.949
+Epoch 7, Accuracy 0.953, F1-Macro 0.953, F1-Micro 0.953
+Epoch 8, Accuracy 0.949, F1-Macro 0.948, F1-Micro 0.949
+Epoch 9, Accuracy 0.949, F1-Macro 0.949, F1-Micro 0.949
+Epoch 10, Accuracy 0.941, F1-Macro 0.940, F1-Micro 0.941
+
+
+=======================================================
+sigmoid
+Epoch 0, Accuracy 0.738, F1-Macro 0.739, F1-Micro 0.738
+Epoch 1, Accuracy 0.809, F1-Macro 0.791, F1-Micro 0.809
+Epoch 2, Accuracy 0.812, F1-Macro 0.800, F1-Micro 0.812
+Epoch 3, Accuracy 0.844, F1-Macro 0.831, F1-Micro 0.844
+Epoch 4, Accuracy 0.844, F1-Macro 0.831, F1-Micro 0.844
+Epoch 5, Accuracy 0.840, F1-Macro 0.829, F1-Micro 0.840
+Epoch 6, Accuracy 0.867, F1-Macro 0.856, F1-Micro 0.867
+Epoch 7, Accuracy 0.859, F1-Macro 0.846, F1-Micro 0.859
+Epoch 8, Accuracy 0.863, F1-Macro 0.848, F1-Micro 0.863
+Epoch 9, Accuracy 0.871, F1-Macro 0.853, F1-Micro 0.871
+Epoch 10, Accuracy 0.871, F1-Macro 0.858, F1-Micro 0.871
+
+
+=======================================================
+tanh
+Epoch 0, Accuracy 0.879, F1-Macro 0.876, F1-Micro 0.879
+Epoch 1, Accuracy 0.898, F1-Macro 0.895, F1-Micro 0.898
+Epoch 2, Accuracy 0.918, F1-Macro 0.915, F1-Micro 0.918
+Epoch 3, Accuracy 0.945, F1-Macro 0.941, F1-Micro 0.945
+Epoch 4, Accuracy 0.953, F1-Macro 0.952, F1-Micro 0.953
+Epoch 5, Accuracy 0.945, F1-Macro 0.945, F1-Micro 0.945
+Epoch 6, Accuracy 0.949, F1-Macro 0.950, F1-Micro 0.949
+Epoch 7, Accuracy 0.973, F1-Macro 0.973, F1-Micro 0.973
+Epoch 8, Accuracy 0.969, F1-Macro 0.968, F1-Micro 0.969
+Epoch 9, Accuracy 0.973, F1-Macro 0.972, F1-Micro 0.973
+Epoch 10, Accuracy 0.980, F1-Macro 0.979, F1-Micro 0.980
+
+

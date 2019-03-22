@@ -1,0 +1,7 @@
+Conv1: filter=5x5x3x64, activation=relu
+MaxPool1: kernel=2x2, strides=3x3
+Conv2: filter=3x3x64x64, activation=relu
+MaxPool2: kernel=2x2, strides=3x3
+FCN1: output=384, activation=relu
+FCN2: output=192, activation=relu
+Final output using softmax.

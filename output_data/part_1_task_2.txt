@@ -1,0 +1,60 @@
+=======================================================
+conv-5-5-64-conv-3-3-64-FCN-512-384-10
+Epoch 0, Accuracy 0.871, F1-Macro 0.862, F1-Micro 0.871
+Epoch 1, Accuracy 0.879, F1-Macro 0.875, F1-Micro 0.879
+Epoch 2, Accuracy 0.930, F1-Macro 0.926, F1-Micro 0.930
+Epoch 3, Accuracy 0.930, F1-Macro 0.926, F1-Micro 0.930
+Epoch 4, Accuracy 0.934, F1-Macro 0.928, F1-Micro 0.934
+Epoch 5, Accuracy 0.945, F1-Macro 0.942, F1-Micro 0.945
+Epoch 6, Accuracy 0.938, F1-Macro 0.934, F1-Micro 0.938
+Epoch 7, Accuracy 0.945, F1-Macro 0.942, F1-Micro 0.945
+Epoch 8, Accuracy 0.945, F1-Macro 0.942, F1-Micro 0.945
+Epoch 9, Accuracy 0.938, F1-Macro 0.936, F1-Micro 0.938
+Epoch 10, Accuracy 0.938, F1-Macro 0.937, F1-Micro 0.938
+Epoch 11, Accuracy 0.949, F1-Macro 0.948, F1-Micro 0.949
+Epoch 12, Accuracy 0.949, F1-Macro 0.951, F1-Micro 0.949
+Epoch 13, Accuracy 0.957, F1-Macro 0.959, F1-Micro 0.957
+Epoch 14, Accuracy 0.957, F1-Macro 0.960, F1-Micro 0.957
+Epoch 15, Accuracy 0.969, F1-Macro 0.970, F1-Micro 0.969
+
+
+=======================================================
+conv-7-7-32-conv-5-5-64-FCN-384-192-10
+Epoch 0, Accuracy 0.852, F1-Macro 0.839, F1-Micro 0.852
+Epoch 1, Accuracy 0.879, F1-Macro 0.871, F1-Micro 0.879
+Epoch 2, Accuracy 0.922, F1-Macro 0.917, F1-Micro 0.922
+Epoch 3, Accuracy 0.938, F1-Macro 0.933, F1-Micro 0.938
+Epoch 4, Accuracy 0.934, F1-Macro 0.926, F1-Micro 0.934
+Epoch 5, Accuracy 0.949, F1-Macro 0.942, F1-Micro 0.949
+Epoch 6, Accuracy 0.945, F1-Macro 0.940, F1-Micro 0.945
+Epoch 7, Accuracy 0.938, F1-Macro 0.932, F1-Micro 0.938
+Epoch 8, Accuracy 0.945, F1-Macro 0.942, F1-Micro 0.945
+Epoch 9, Accuracy 0.941, F1-Macro 0.941, F1-Micro 0.941
+Epoch 10, Accuracy 0.953, F1-Macro 0.953, F1-Micro 0.953
+Epoch 11, Accuracy 0.945, F1-Macro 0.944, F1-Micro 0.945
+Epoch 12, Accuracy 0.945, F1-Macro 0.947, F1-Micro 0.945
+Epoch 13, Accuracy 0.957, F1-Macro 0.958, F1-Micro 0.957
+Epoch 14, Accuracy 0.953, F1-Macro 0.956, F1-Micro 0.953
+Epoch 15, Accuracy 0.977, F1-Macro 0.977, F1-Micro 0.977
+
+
+=======================================================
+conv-7-7-64-conv-3-3-64-FCN-512-192-10
+Epoch 0, Accuracy 0.852, F1-Macro 0.851, F1-Micro 0.852
+Epoch 1, Accuracy 0.891, F1-Macro 0.883, F1-Micro 0.891
+Epoch 2, Accuracy 0.895, F1-Macro 0.886, F1-Micro 0.895
+Epoch 3, Accuracy 0.910, F1-Macro 0.901, F1-Micro 0.910
+Epoch 4, Accuracy 0.926, F1-Macro 0.921, F1-Micro 0.926
+Epoch 5, Accuracy 0.934, F1-Macro 0.932, F1-Micro 0.934
+Epoch 6, Accuracy 0.930, F1-Macro 0.927, F1-Micro 0.930
+Epoch 7, Accuracy 0.934, F1-Macro 0.934, F1-Micro 0.934
+Epoch 8, Accuracy 0.938, F1-Macro 0.935, F1-Micro 0.938
+Epoch 9, Accuracy 0.953, F1-Macro 0.951, F1-Micro 0.953
+Epoch 10, Accuracy 0.965, F1-Macro 0.963, F1-Micro 0.965
+Epoch 11, Accuracy 0.969, F1-Macro 0.969, F1-Micro 0.969
+Epoch 12, Accuracy 0.957, F1-Macro 0.958, F1-Micro 0.957
+Epoch 13, Accuracy 0.957, F1-Macro 0.958, F1-Micro 0.957
+Epoch 14, Accuracy 0.957, F1-Macro 0.956, F1-Micro 0.957
+Epoch 15, Accuracy 0.969, F1-Macro 0.968, F1-Micro 0.969
+
+
