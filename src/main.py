@@ -48,17 +48,17 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     if args.train_data:
-        filter_config = [int(i) for i in args.filter_config[1:-1].split(' ')]
+    	filter_config = [int(i) for i in args.filter_config[1:-1].split(' ')]
         if args.dataset.lower() == 'cifar-10':
-            trainx, trainy = reader.read_cifar_dataset(args.train_data)
-            testx, testy = reader.read_cifar_dataset(args.test_data)
+    	   trainx, trainy = reader.read_cifar_dataset(args.train_data)
+           testx, testy = reader.read_cifar_dataset(args.test_data)
         elif args.dataset.lower() == 'fashion-mnist':
             trainx, trainy = reader.read_fmnist_dataset(args.train_data)
             testx, testy = reader.read_fmnist_dataset(args.train_data, kind='t10k')
-        model = cnn.CNN(filter_config, args.activation.lower(), trainx.shape[1:], trainy.shape[1])
-        bg = batch_generators.BatchGenerator(trainx, trainy, 128, shape=trainx.shape[1:], split_ratio=(1.0, 0.0))
-        model.train(bg)
-        print_score(model.evaluate(testx, testy))
+    	model = cnn.CNN(filter_config, args.activation.lower(), trainx.shape[1:], trainy.shape[1])
+    	bg = batch_generators.BatchGenerator(trainx, trainy, 128, shape=trainx.shape[1:], split_ratio=(1.0, 0.0))
+    	model.train(bg)
+    	print_score(model.evaluate(testx, testy))
     else:
         sess, ip, op = load_cnn_model(args.dataset.lower())
         testx, testy = reader.read_dataset(args.test_data)
