@@ -54,7 +54,7 @@ if __name__ == '__main__':
            testx, testy = reader.read_cifar_dataset(args.test_data)
         elif args.dataset.lower() == 'fashion-mnist':
             trainx, trainy = reader.read_fmnist_dataset(args.train_data)
-            testx, testy = reader.read_fmnist_dataset(args.train_data, kind='t10k')
+            testx, testy = reader.read_fmnist_dataset(args.test_data, kind='t10k')
     	model = cnn.CNN(filter_config, args.activation.lower(), trainx.shape[1:], trainy.shape[1])
     	bg = batch_generators.BatchGenerator(trainx, trainy, 128, shape=trainx.shape[1:], split_ratio=(1.0, 0.0))
     	model.train(bg)
