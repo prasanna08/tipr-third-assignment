@@ -6,10 +6,10 @@ class CNN(object):
         self.filter_config = filter_config
         self.act_fn = act_fn
         self.act_fn_map = {
-            'sigmoid': self.sigmoid,
-            'swish': self.swish,
-            'tanh': self.tanh,
-            'relu': self.relu
+            'sigmoid': self.sigmoid_act_fn,
+            'swish': self.swish_act_fn,
+            'tanh': self.tanh_act_fn,
+            'relu': self.relu_act_fn
         }
         self.sess = tf.Session()
         self.create_network(input_shape, output_shape)
@@ -28,7 +28,7 @@ class CNN(object):
     def tanh_act_fn(self, inputs):
         return tf.nn.tanh(inputs)
 
-    def conv_layer(self, inputs, kernel_size, in_features, out_features, act_fn):
+    def conv_layer(self, inputs, kernel_size, in_features, out_features):
         w = tf.Variable(tf.truncated_normal(shape=(kernel_size, kernel_size, in_features, out_features), stddev=5e-2))
         b = tf.Variable(tf.constant(0.0, shape=(out_features,)))
         h = tf.nn.conv2d(inputs, w, strides=[1, 1, 1, 1], padding='SAME') + b
@@ -64,13 +64,13 @@ class CNN(object):
         self.labels = tf.placeholder(shape=(None, output_shape), dtype=tf.float32)
         x = self.inputs
         in_features = input_shape[-1]
-        for kernel_size in filter_config:
+        for kernel_size in self.filter_config:
             x = self.conv_layer(x, kernel_size, in_features, out_features=64)
             in_features = 64
             out_features = 64
 
         x = self.flatten(x)
-        x = self.fcn_layer(x, x.shape[1], 384)
+        x = self.fcn_layer(x, x.shape.as_list()[1], 384)
         x = self.fcn_layer(x, 384, 192)
         self.embedding_layer = x
         x = self.fcn_layer(x, 192, output_shape)
@@ -79,8 +79,8 @@ class CNN(object):
         self.loss = self.loss(x, self.labels)
 
         self.global_step = tf.Variable(tf.constant(0), trainable=False)
-        self.lr = self.lr_schedular(0.01, global_step)
-        self.optimizer = self.optimizer_op(self, self.loss, self.lr, self.global_step)
+        self.lr = self.lr_schedular(0.01, self.global_step)
+        self.optimizer = self.optimizer_op(self.loss, self.lr, self.global_step)
         return self.optimizer
 
     def get_scores(self, predictions, labels):

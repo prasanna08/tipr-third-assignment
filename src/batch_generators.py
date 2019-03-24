@@ -1,3 +1,5 @@
+import numpy as np
+
 class BatchGenerator(object):
     def __init__(self, data, labels, batch_size, shape, split_ratio=(0.6, 0.8)):
         self.data = data
