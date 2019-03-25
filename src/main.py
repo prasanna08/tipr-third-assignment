@@ -3,6 +3,7 @@
 
 import os
 from sklearn.metrics import f1_score, accuracy_score
+import tensorflow as tf
 import argparse
 
 import cnn
@@ -10,6 +11,7 @@ import batch_generators
 import reader
 
 def load_cnn_model(name):
+    cur_path = os.getcwd()
     if name == 'fashion-mnist':
         model_root = os.path.join(cur_path, '../models/FMNIST/FMNIST-Best')
     elif name == 'cifar-10':
@@ -48,19 +50,22 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     if args.train_data:
-    	filter_config = [int(i) for i in args.filter_config[1:-1].split(' ')]
+        filter_config = [int(i) for i in args.filter_config[1:-1].split(' ')]
         if args.dataset.lower() == 'cifar-10':
-    	   trainx, trainy = reader.read_cifar_dataset(args.train_data)
+           trainx, trainy = reader.read_cifar_dataset(args.train_data)
            testx, testy = reader.read_cifar_dataset(args.test_data)
         elif args.dataset.lower() == 'fashion-mnist':
             trainx, trainy = reader.read_fmnist_dataset(args.train_data)
             testx, testy = reader.read_fmnist_dataset(args.test_data, kind='t10k')
-    	model = cnn.CNN(filter_config, args.activation.lower(), trainx.shape[1:], trainy.shape[1])
-    	bg = batch_generators.BatchGenerator(trainx, trainy, 128, shape=trainx.shape[1:], split_ratio=(1.0, 0.0))
-    	model.train(bg)
-    	print_score(model.evaluate(testx, testy))
+        model = cnn.CNN(filter_config, args.activation.lower(), trainx.shape[1:], trainy.shape[1])
+        bg = batch_generators.BatchGenerator(trainx, trainy, 128, shape=trainx.shape[1:], split_ratio=(1.0, 0.0))
+        model.train(bg)
+        print_scores(model.evaluate(testx, testy))
     else:
         sess, ip, op = load_cnn_model(args.dataset.lower())
-        testx, testy = reader.read_dataset(args.test_data)
+        if args.dataset.lower() == 'cifar-10':
+            testx, testy = reader.read_cifar_dataset(args.test_data)
+        elif args.dataset.lower() == 'fashion-mnist':
+            testx, testy = reader.read_fmnist_dataset(args.test_data)
         predy = predict(sess, testx, ip, op)
-        print_score(score(predy.argmax(axis=1), testy.argmax(axis=1)))
+        print_scores(score(predy.argmax(axis=1), testy.argmax(axis=1)))
